@@ -15,9 +15,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function validar(e) {
         if(e.target.value.trim() === '') {
-            console.log('Esta vacio')
+            mostrarAlerta();
         } else {
             console.log('si hay algo...')
         }
+    }
+
+    function mostrarAlerta() {
+        // Generar alerta en HTML
+        const error = document.createElement('P');
+        error.textContent = 'Hubo un error...';
+        console.log(error);
     }
 });
